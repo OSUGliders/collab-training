@@ -14,12 +14,18 @@ def celcius_to_kelvin(T):
     return T + 273.15
 
 # Rankine
+def celsius_to_rankine(celsius):
+    rankine = (celsius + 273.15) * (9/5)
+    return rankine
 
-# Delisle 
+
+# Delisle
 
 # Newton
 
-# Réaumur
+def celcius_to_reaumur(T:float) -> float:
+    ''' Convert C to Reaumur '''
+    return T * 4/5
 
 # Rømer
 
@@ -33,8 +39,12 @@ def main():
 
     temperature_degreeK = celcius_to_kelvin(temperature_degreeC)
     print(f"The temperature in Kelvin is: {temperature_degreeK} K")
+    temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
+    print(f"The temperature in reaumur is: {temperature_degreeRe} Re")
 
     # Task: Print the output of your function. 
+
+    print("Jesse added this.")
 
 # When you run this script from the command line, e.g. 'python convert_temperature.py' 
 # it will execute the block below:
