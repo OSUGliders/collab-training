@@ -10,6 +10,9 @@ def celcius_to_fahrenheit(T):
 
 # Kelvin
 
+def celcius_to_kelvin(T):
+    return T + 273.15
+
 # Rankine
 
 # Delisle 
@@ -27,6 +30,9 @@ def main():
 
     temperature_degreeF = celcius_to_fahrenheit(temperature_degreeC)
     print(f"The temperature in Fahrenheit is: {temperature_degreeF} F")
+
+    temperature_degreeK = celcius_to_kelvin(temperature_degreeC)
+    print(f"The temperature in Kelvin is: {temperature_degreeK} K")
 
     # Task: Print the output of your function. 
 
