@@ -11,6 +11,10 @@ def celcius_to_fahrenheit(T):
 # Kelvin
 
 # Rankine
+def celsius_to_rankine(celsius):
+    rankine = (celsius + 273.15) * (9/5)
+    return rankine
+
 
 # Delisle 
 
