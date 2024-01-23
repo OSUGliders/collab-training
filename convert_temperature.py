@@ -20,7 +20,9 @@ def celsius_to_rankine(celsius):
 
 # Newton
 
-# Réaumur
+def celcius_to_reaumur(T:float) -> float:
+    ''' Convert C to Reaumur '''
+    return T * 4/5
 
 # Rømer
 
@@ -31,6 +33,9 @@ def main():
 
     temperature_degreeF = celcius_to_fahrenheit(temperature_degreeC)
     print(f"The temperature in Fahrenheit is: {temperature_degreeF} F")
+
+    temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
+    print(f"The temperature in reaumur is: {temperature_degreeRe} Re")
 
     # Task: Print the output of your function. 
 
