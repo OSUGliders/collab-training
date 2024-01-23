@@ -9,3 +9,5 @@ To run the code in the terminal use:
 python convert_temperature.py
 ```
 
+Conversion formulas:
+https://en.wikipedia.org/wiki/Conversion_of_scales_of_temperature
