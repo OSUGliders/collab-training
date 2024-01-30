@@ -20,6 +20,9 @@ def celsius_to_rankine(celsius):
 
 
 # Delisle
+def celsius_to_Delisle(celsius):
+    Delisle = (100 - celsius) * (3/2)
+    return Delisle
 
 # Newton
 
