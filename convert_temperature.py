@@ -28,7 +28,9 @@ def celcius_to_reaumur(T:float) -> float:
     return T * 4/5
 
 # Rømer
-
+def celcius_to_romer(celsius):
+   romer = (celsius-7.5)*(40/21)
+   return romer
 
 def main():
     temperature_degreeC = 21.7
@@ -41,6 +43,8 @@ def main():
     print(f"The temperature in Kelvin is: {temperature_degreeK} K")
     temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
     print(f"The temperature in reaumur is: {temperature_degreeRe} Re")
+    temperature_degreeRomer = celsius_to_romer(temperature_degreeC)
+    print(f"The temperature in romer is: {temperature_degreeRomer} Ro")
 
     # Task: Print the output of your function. 
 
