@@ -20,9 +20,9 @@ def celsius_to_rankine(celsius):
 
 
 # Delisle
-def celsius_to_Delisle(celsius):
-    Delisle = (100 - celsius) * (3/2)
-    return Delisle
+def celsius_to_delisle(celsius):
+    delisle = (100 - celsius) * (3/2)
+    return delisle
 
 # Newton
 
@@ -39,7 +39,8 @@ def main():
 
     temperature_degreeF = celcius_to_fahrenheit(temperature_degreeC)
     print(f"The temperature in Fahrenheit is: {temperature_degreeF} F")
-
+    temperature_degreeDe = celsius_to_delisle(temperature_degreeC)
+    print(f"The temperature in Kelvin is: {temperature_degreeK} K")
     temperature_degreeK = celcius_to_kelvin(temperature_degreeC)
     print(f"The temperature in Kelvin is: {temperature_degreeK} K")
     temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
