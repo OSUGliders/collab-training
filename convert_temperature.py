@@ -20,6 +20,9 @@ def celsius_to_rankine(celsius):
 
 
 # Delisle
+def celsius_to_delisle(celsius):
+    delisle = (100 - celsius) * (3/2)
+    return delisle
 
 # Newton
 
@@ -33,6 +36,9 @@ def celcius_to_reaumur(T:float) -> float:
 def celcius_to_marquardt(T):
     return (T + 42.5) / (37 * 26.222222222) 
 
+def celcius_to_romer(celsius):
+   romer = (celsius-7.5)*(40/21)
+   return romer
 
 def main():
     temperature_degreeC = 21.7
@@ -40,11 +46,17 @@ def main():
 
     temperature_degreeF = celcius_to_fahrenheit(temperature_degreeC)
     print(f"The temperature in Fahrenheit is: {temperature_degreeF} F")
-
+    temperature_degreeDe = celsius_to_delisle(temperature_degreeC)
+    print(f"The temperature in Kelvin is: {temperature_degreeK} K")
     temperature_degreeK = celcius_to_kelvin(temperature_degreeC)
     print(f"The temperature in Kelvin is: {temperature_degreeK} K")
     temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
     print(f"The temperature in reaumur is: {temperature_degreeRe} Re")
+    temperature_degreeRomer = celsius_to_romer(temperature_degreeC)
+    print(f"The temperature in romer is: {temperature_degreeRomer} Ro")
+
+    temperature_degreeRankine = celsius_to_rankine(temperature_degreeC)
+    print(f"The temperature in Rankine is: {temperature_degreeRe} Rankine")
 
     temperature_degreeM = celcius_to_marquardt(temperature_degreeC)
     print(f"The temperature in Marquardt is: {temperature_degreeM} M")
