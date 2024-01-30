@@ -37,6 +37,9 @@ def main():
     temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
     print(f"The temperature in reaumur is: {temperature_degreeRe} Re")
 
+    temperature_degreeRankine = celsius_to_rankine(temperature_degreeC)
+    print(f"The temperature in Rankine is: {temperature_degreeRe} Rankine")
+
     # Task: Print the output of your function. 
 
 # When you run this script from the command line, e.g. 'python convert_temperature.py' 
