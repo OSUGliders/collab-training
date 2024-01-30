@@ -29,6 +29,10 @@ def celcius_to_reaumur(T:float) -> float:
 
 # Rømer
 
+# Marquardt
+def celcius_to_marquardt(T):
+    return (T + 42.5) / (37 * 26.222222222) 
+
 
 def main():
     temperature_degreeC = 21.7
@@ -41,6 +45,9 @@ def main():
     print(f"The temperature in Kelvin is: {temperature_degreeK} K")
     temperature_degreeRe = celcius_to_reaumur(temperature_degreeC)
     print(f"The temperature in reaumur is: {temperature_degreeRe} Re")
+
+    temperature_degreeM = celcius_to_marquardt(temperature_degreeC)
+    print(f"The temperature in Marquardt is: {temperature_degreeM} M")
 
     # Task: Print the output of your function. 
 
